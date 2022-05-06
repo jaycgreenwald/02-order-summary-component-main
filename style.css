@@ -1,0 +1,189 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+main {
+    width: 328px;
+    margin: auto;
+    border-radius: 19px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:
+        0px 18px 16px hsla(254, 51%, 42%, 0.1);
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin: 31px 0 0 0;
+}
+
+h5 {
+    font-size: .9rem;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+button {
+    width: 280px;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 16px 0;
+    margin: 26px 0 0 0;
+    box-shadow:
+        0px 20px 13px hsla(254, 51%, 42%, 0.15);
+}
+
+button:hover {
+    background-color: hsl(244, 83%, 68%);
+}
+
+main > p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: hsl(224, 23%, 55%);
+    margin: 17px 30px 0 30px;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer > a {
+    color: hsl(228, 45%, 44%);
+}
+
+#hero {
+    width: 100%;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.plan-info {
+    width: 280px;
+    border-radius: 14px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 21px 0 0 0;
+}
+ 
+.plan-info > img {
+    flex-grow: 0;
+    margin: 15px;
+}
+
+.plan-cost {
+    text-align: left;
+    flex-grow: 1;
+    line-height: 1.5;
+    padding: 1px 0;
+}
+
+.plan-cost > h5 {
+    margin: 0;
+}
+
+.plan-cost > p {
+    font-size: .9rem;
+    color:hsl(224, 23%, 55%);
+    margin: 0 0 2px 0;
+}
+
+#change {
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    flex-grow: 0;
+    margin: 15px;
+}
+
+a#change:hover {
+    text-decoration: none;
+    color: hsl(244, 83%, 68%);
+}
+
+#cancel {
+    font-size: .9rem;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin: 24px 0 34px 0;
+}
+
+#cancel:hover {
+    color: hsl(0, 0%, 9%);
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        width: 450px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin: 45px 0 0 0;   
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    main > p {
+        margin: 19px 51px 0 51px;
+        line-height: 1.6;
+    }
+
+    button {
+        width: 352px;
+        margin: 31px 0 0 0;
+    }
+
+    .plan-info {
+        width: 352px;
+        padding: 10px;
+    }
+
+    .plan-cost {
+        margin: 5px;
+    }
+    
+    .plan-cost > p {
+        font-size: 1rem;
+    }
+
+    #cancel {
+        margin: 31px 0 52px 0;
+    }
+
+}
